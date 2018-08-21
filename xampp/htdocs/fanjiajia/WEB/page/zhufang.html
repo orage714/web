@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>房家加</title>
+	<link rel="shortcut icon" href="http://www.51fjj.com/Public/home/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="../css/reset.css">
+
+
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	
+	<link rel="stylesheet" href="../css/jqueryui.min.css"> 
+	<link rel="stylesheet" href="../css/jquery-ui-slider-pips.min.css">
+
+	<link rel="stylesheet" type="text/css" href="../css/zhufang.css">
+	<script type="text/javascript" src='../js/jquery-3.3.1.min.js'></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src='../js/zhufang.js'></script>
+	
+	
+	
+	<script src="https://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+	<script src="https://code.jquery.com/ui/1.11.1/jquery-ui-slider-pips.js"></script> 
+
+	
+</head>
+<body>
+	<header class="nav-search" id="top">
+			<div class="container-fluid min-width-1200">
+				<div class="header-img-box">
+					<a class="home-logo" href="../index.html"><img src="../images/logo.svg" alt="返回主页"></a>
+				</div>
+				<div class="input-search-box pull-left" id="searchBox">
+					<div class="input-background">
+						<input type="text" class="input-search-box-inp" placeholder="房源名、小区或所在区域" value="">
+						<button type="submit" class="input-search-box-btn pr-30 pl-30"><span class="glyphicon glyphicon-search mr-5" aria-hidden="true"></span></button>
+						<a class="nav-other-btn pull-right" href="/index.php/Search/index">全部</a>
+					</div>
+				</div>
+				<div class="input-search-box pull-right">
+								<a id="inText" class="nav-other-btn pull-right mr-20" href="zhuce.html">注册/登陆</a>    
+								        <a class="nav-other-btn pull-right mr-20" href="yezhu.html">成为业主</a>
+					<a class="nav-other-btn pull-right mr-20" href="happy.html">我要嗨皮</a>
+					<a class="nav-other-btn pull-right mr-20" href="office.html">我要办公</a>
+					<a class="nav-other-btn pull-right mr-20" href="zhufang.html">我要租房</a>
+					<a class="nav-other-btn pull-right mr-20" href="../index.html">首页</a>
+				</div>
+			</div>
+	</header>
+	<div class="container-fluid min-width-1200">
+		<div class="row" style="position: absolute; width: 100%; min-width: 1200px; height: 100%;">
+			<!-- 房源列表部分 -->
+			<div class="col-xs-6 pl-0 pr-0 pb-0 pt-0">
+				<!-- 条件筛选部分 -->
+				<form class="box" id="search_form">
+					<div class="row pt-10 pl-10">
+						<div class="col-xs-2 text-g-9 text-right">
+							<span>房源类型：</span>
+						</div>
+						<div class="col-xs-10" id="linktype01">
+							<span class="templinkactive  templink mr-10" data-val="0">不限</span>
+							<span class="templink mr-10" data-val="1">房家加公寓</span>
+							<span class="templink mr-10" data-val="5">下沙厂房</span>
+							<span class="templink mr-10" data-val="6">白马湖写字楼</span>
+							<span class="templink mr-10" data-val="2">青年社区</span>
+							<span class="templink mr-10" data-val="3">民宿短租</span>
+							<span class="templink mr-10" data-val="4">文一西写字楼</span>
+						</div>
+					</div>
+					<hr>
+					<div class="row pl-10">
+						<div class="col-xs-2 text-g-9 text-right">
+							<span>所在区域：</span>
+						</div>
+						<div class="col-xs-10" id="linktype02">
+							<span class="templinkactive templink  mr-10" data-val="0">不限</span>
+							<span class="templink mr-10" data-val="1">西湖区</span>
+							<span class="templink mr-10" data-val="6">余杭区</span>
+							<span class="templink mr-10" data-val="4">滨江区</span>
+							<span class="templink mr-10" data-val="2">拱墅区</span>
+							<span class="templink mr-10" data-val="3">江干区</span>
+							<span class="templink mr-10" data-val="5">萧山区</span>
+							<span class="templink mr-10" data-val="7">上城区</span>
+							<span class="templink mr-10" data-val="8">下城区</span>
+						</div>
+					</div>
+					<hr>
+					<div class="row pt-20 pl-50 pr-50">
+						<div class="col-xs-12">
+							<div class="slider ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all ui-slider-pips ui-slider-float"
+							 id="slider-range">
+								<div class="ui-slider-range ui-widget-header ui-corner-all" style="left: 0%; width: 100%;"></div>
+								<span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 0%;">
+									<span class="ui-slider-tip">￥0</span>
+								</span>
+								<span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 100%;">
+									<span class="ui-slider-tip">￥5000</span>
+								</span>
+								<span class="ui-slider-pip ui-slider-pip-first ui-slider-pip-label ui-slider-pip-0 ui-slider-pip-selected-initial-first"
+								 style="left: 0%">
+									<span class="ui-slider-line"></span>
+									<span class="ui-slider-label" data-value="0">￥0</span>
+								</span>
+								<span class="ui-slider-pip ui-slider-pip-label ui-slider-pip-500" style="left: 10.0000%">
+									<span class="ui-slider-line"></span>
+									<span class="ui-slider-label" data-value="500">￥500</span>
+								</span>
+								<span class="ui-slider-pip ui-slider-pip-label ui-slider-pip-1000" style="left: 20.0000%">
+									<span class="ui-slider-line"></span>
+									<span class="ui-slider-label" data-value="1000">￥1000</span>
+								</span>
+								<span class="ui-slider-pip ui-slider-pip-label ui-slider-pip-1500" style="left: 30.0000%">
+									<span class="ui-slider-line"></span>
+									<span class="ui-slider-label" data-value="1500">￥1500</span>
+								</span>
+								<span class="ui-slider-pip ui-slider-pip-label ui-slider-pip-2000" style="left: 40.0000%">
+									<span class="ui-slider-line"></span>
+									<span class="ui-slider-label" data-value="2000">￥2000</span>
+								</span>
+								<span class="ui-slider-pip ui-slider-pip-label ui-slider-pip-2500" style="left: 50.0000%">
+									<span class="ui-slider-line"></span>
+									<span class="ui-slider-label" data-value="2500">￥2500</span>
+								</span>
+								<span class="ui-slider-pip ui-slider-pip-label ui-slider-pip-3000" style="left: 60.0000%">
+									<span class="ui-slider-line"></span>
+									<span class="ui-slider-label" data-value="3000">￥3000</span>
+								</span>
+								<span class="ui-slider-pip ui-slider-pip-label ui-slider-pip-3500" style="left: 70.0000%">
+									<span class="ui-slider-line"></span>
+									<span class="ui-slider-label" data-value="3500">￥3500</span>
+								</span>
+								<span class="ui-slider-pip ui-slider-pip-label ui-slider-pip-4000" style="left: 80.0000%">
+									<span class="ui-slider-line"></span>
+									<span class="ui-slider-label" data-value="4000">￥4000</span>
+								</span>
+								<span class="ui-slider-pip ui-slider-pip-label ui-slider-pip-4500" style="left: 90.0000%">
+									<span class="ui-slider-line"></span>
+									<span class="ui-slider-label" data-value="4500">￥4500</span>
+								</span>
+								<span class="ui-slider-pip ui-slider-pip-last ui-slider-pip-label ui-slider-pip-5000 ui-slider-pip-selected-initial-second"
+								 style="left: 100%">
+									<span class="ui-slider-line"></span>
+									<span class="ui-slider-label" data-value="5000">￥5000</span>
+								</span>
+							</div>
+							<p id="amount" class="text-center text-warning mt-50 t-weight-b">租金范围：0至5000元</p>
+						</div>
+					</div>
+				</form>
+				<div class="embed-responsive embed-responsive-4by3" id="s-iframe">
+					<iframe class="embed-responsive-item" src="./index.html" id="iFrame"
+					>
+					<!-- <iframe class="embed-responsive-item" src="/index.php/Search/lists?&amp;classid=0&amp;rgid=0&amp;fee_start=0&amp;fee_end=5000" id="iFrame"></iframe> -->
+
+					</iframe>
+				</div>
+			</div>
+			<div class="col-xs-6 pl-0 pr-0 pb-0 pt-0">
+					<div id="container"></div>;
+				
+			</div>
+				<!-- 地图部分 -->
+				
+		</div>
+	</div>
+
+	
+<!-- 百度地图 -->
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=GrjTcvcyf6sQse3qxVT98aU792Qyu9G8"></script>
+</body>
+<script type="text/javascript" >
+// 	$(function(){
+		
+// 	})
+// //滑块
+$('#slider-range').slider({
+	range:true,
+	min:0,
+	max:5000,
+	values:[0,5000],
+	step: 500,//控制区间
+	slide: function (event, ui) {
+                $("#amount").text("租金范围：" + ui.values[0] + "至" + ui.values[1] + "元");
+			},
+	// stop: function (event, ui) {
+// 		// 改变后处理事件
+		// SetPara();
+	// }
+})
+// .slider("pips", {
+//             rest: "label",
+//             prefix: "￥",
+//         }).slider("float", {
+//             prefix: "￥",
+//         });
+// function SetPara(){
+
+// }
+/*数据提交处理*/
+// function SetPara() {
+        //     var urlAll = "/index.php/Search/lists?";
+        //     var keyword = "";
+        //     var classId = $('#linktype01 span.templinkactive').attr('data-val');
+        //     var rgId = $('#linktype02 span.templinkactive').attr('data-val');
+        //     var vid = "";
+        //     var fee_start = $("#slider-range").slider("values", 0);
+        //     var fee_end = $("#slider-range").slider("values", 1);
+        //     if (keyword) {
+        //         urlAll += '&keyword=' + keyword;
+        //     }
+        //     if (vid) {
+        //         urlAll += '&vid=' + vid;
+        //     }
+        //     if (classId) {
+        //         urlAll += '&classid=' + classId;
+        //     }
+        //     if (rgId) {
+        //         urlAll += '&rgid=' + rgId;
+        //     }
+        //     if (fee_start || fee_end) {
+        //         urlAll += '&fee_start=' + fee_start + '&fee_end=' + fee_end;
+        //     }
+
+        //     $(window.parent.document).find("#iFrame").attr("src", urlAll);
+        // }
+//地图
+function mapLoad(){
+	var mp = new BMap.Map("container");    // 创建Map实例
+	mp.centerAndZoom('杭州市', 11);  // 初始化地图,设置中心点坐标和地图级别
+	mp.setCurrentCity("杭州市");          // 设置地图显示的城市 此项是必须设置的
+	mp.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+	var opts = { type: BMAP_NAVIGATION_CONTROL_LARGE, anchor: BMAP_ANCHOR_TOP_RIGHT };  //右上角，添加默认缩放平移控件
+	 mp.addControl(new BMap.NavigationControl(opts)); //将控件添加到地图中
+	
+	
+}
+mapLoad();
+
+</script>
+</html>

@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>房家加</title>
+	<link rel="shortcut icon" href="http://www.51fjj.com/Public/home/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="../css/reset.css">
+	<link href="https://cdn.bootcss.com/pikaday/1.6.1/css/pikaday.min.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	
+	<link rel="stylesheet" href="../css/index.css"> 
+	<!-- <link rel="stylesheet" href="../css/jquery-ui-slider-pips.min.css"> -->
+
+	<link rel="stylesheet" type="text/css" href="../css/office.css">
+	<script type="text/javascript" src='../js/jquery-3.3.1.min.js'></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<!-- <script type="text/javascript" src='../js/zhufang.js'></script> -->
+	<script src="http://static.runoob.com/assets/jquery-validation-1.14.0/dist/jquery.validate.min.js"></script>
+
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=GrjTcvcyf6sQse3qxVT98aU792Qyu9G8"></script>
+<script src="https://cdn.bootcss.com/pikaday/1.6.1/pikaday.min.js"></script>
+	<!-- <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.js"></script> -->
+	<!-- <script src="https://code.jquery.com/ui/1.11.1/jquery-ui-slider-pips.js"></script>  -->
+	<style>
+		.ditu{
+			width:100%;
+			height: 100%;
+			
+		}
+	
+	</style>
+
+	
+</head>
+<body>
+		<header class="nav-box lcy-nav">
+				<div class="container min-width-1200">
+					<span><img src="../images/logo.svg" class="logo"><span class="su">|</span><img src="../images/rr.svg" class="rr"></span>
+					<a class="pull-right" href="javascript:void(0)" id="lcyQylhBtn" style="color: rgb(255, 255, 255);">企业联合计划</a>
+					<a class="pull-right" href="javascript:void(0)" id="lcyJssjBtn" style="color: rgb(255, 255, 255);">金沙世纪EBC</a>
+					<a class="pull-right" href="javascript:void(0)" id="lcyCyyBtn" style="color: rgb(255, 255, 255);">房家加创意产业园</a>
+					<a class="pull-right" href="javascript:void(0)" id="lcyAboutBtn" style="color: rgb(255, 255, 255);">关于鹿创营</a>
+					<a class="pull-right" href="../index.html" style="color: rgb(255, 255, 255);">返回房家加首页</a>
+				</div>
+			</header>
+		<div class="jumbotron lcy-head-box">
+				<div class="container min-width-1200">
+					<h1 class="lcy-title-logo"><img src="../images/rcy.svg"></h1>
+					<div class="cut-box cut-box-l mb-30"></div>
+					<p class="text-f mt-10 mb-10 t-size-18">助力企业发展，联合共筑辉煌</p>
+					<p class="text-f mt-10 mb-10 t-size-18">房家加创意产业园 · 金沙世纪EBC · 企业联合计划</p>
+					<div class="cut-box cut-box-m mt-30 mb-30"></div>
+					<p class="text-f mt-10 mb-10 t-size-14"><img class="lcy-title-icon" src="../images/tel.svg" style="height:14px"><span>400-998-9897</span></p>
+					<p class="text-f mt-10 mb-10 t-size-14"><img class="lcy-title-icon" src="../images/point.svg"><span>0571-87098037</span></p>
+					<p class="text-f mt-10 mb-10 t-size-14"><img class="lcy-title-icon" src="../images/email.svg"><span>kefu@51fjj.com</span></p>
+					<p class="mt-30 mb-30">
+						<a class="btn btn-lcy-96" id="lcyBookingBtn">在线预订</a>
+					</p>
+				</div>
+			</div>
+		<div class="container min-width-1200" id="lcyAbout">
+			<div class="lcy-text-title">
+				<h1><span>[</span>关于鹿创营<span>]</span></h1>
+				<p class="text-g-9 t-size-16">About lushow co-work</p>
+				<div class="cut-box cut-box-m mar-au"></div>
+			</div>
+			<div class="lcy-text-body">
+				<p>在相继完成房家加公寓、房家加青年社区、房家加青年鹿透社的战略布局后，房家加一改往日作风，又要进军创业办公领域啦。</p>
+				<p>房家加打造的精装修办公家具全配拎包入驻，酒店式服务办公空间。</p>
+			</div>
+			<div class="lcy-text-body">
+				<h3>房家加 · 创意产业园</h3>
+				<p>房家加创意产业园位于杭州市余杭区高教路970-1号4号楼，整体规划打造为精装修家具全配，拎包入驻的酒店式商务办公服务空间。</p>
+				<p>空间运营：独立办公室、创意工位、服务中心、会议室、路演厅、茶水间、洽谈室、500㎡公共花园平台。</p>
+				<p>户内配套：中央空调、办公桌椅、储物柜、打印机、路由器、冰箱、微波炉等商务办公设备。</p>
+				<p>服务支持：全高速无线网络覆盖、服务中心行政接待支持、费用代收代缴、财务代理、法务咨询等。</p>
+			</div>
+			<div class="lcy-text-body">
+				<h3>金沙世纪 · EBC</h3>
+				<p>是房家加与华厦集团携手并肩助力的“EBC商务大厦”。</p>
+				<p>合力打造杭州首个“可选精装全配，拎包立即入驻办公、提供管家式托管服务”的标杆写字楼项目。</p>
+			</div>
+			<div class="lcy-text-body">
+				<h3>企业联合计划</h3>
+				<p>是房家加依托旗下“青年鹿透社”项目结合鹿创营模式拓展出的，</p>
+				<p>专门为企业部门推出的联合计划。</p>
+				<p>旨在每个中小企业的员工拥有自己的线下活动场所，让统一企业不同部门，甚至不同企业之间的人有一个交流互动的平台。</p>
+			</div>
+		</div>
+		<div class="container min-width-1200 pt-50 pb-50 mt-50 mb-50">
+				<div class="pull-left office-title01">
+					<h1>定制化设计</h1>
+					<div class="office-title-cut-l"></div>
+					<p>设计师专属定制装修，</p>
+					<p>优雅的办公环境</p>
+					<div class="office-title-cut-s"></div>
+				</div>
+				<div class="pull-right office-img01">
+					<img data-original="../images/off-ban.jpg" src="../images/off-ban.jpg" alt="鹿创营办公室效果图01" style="display: inline;">
+				</div>
+				<div class="img-border-01"></div>
+			</div>
+		<div class="container min-width-1200 pt-50 pb-50 mt-50 mb-50">
+				<div class="pull-left office-img02">
+					<img data-original="/Public/home/img/luchuangying/office_02.jpg" src="../images/off-ban1.jpg" alt="鹿创营效果图02" style="display: inline;">
+				</div>
+				<div class="pull-right office-title02">
+					<h1>完善的配套设施</h1>
+					<div class="office-title-cut-l title02-cut-l"></div>
+					<p>办公家具齐全</p>
+					<p>拎包入驻</p>
+					<div class="office-title-cut-s title02-cut-s"></div>
+				</div>
+				<div class="img-border-02"></div>
+			</div>
+		<div class="container min-width-1200 mt-50 pt-50" id="lcyCyy">
+				<div class="lcy-text-title">
+					<h1><span>[</span>房家加创意产业园<span>]</span></h1>
+					<p class="text-g-9 t-size-16">FJJ · Creative Industrial Park</p>
+					<div class="lcy-dingwei-icon">
+						<img src="../images/dibiao.svg">
+					</div>
+				</div>
+				<div class="lcy-xiangmu-bg cyy-bg">
+					<div class="row">
+						<div class="col-xs-4">
+							<div class="lcy-map-box">
+								<div style="width: 100%;height: 465px;border: none;">
+									<div class="ditu" id="ditu1"></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-8">
+							<div class="lcy-xiangmu-text">
+								<h2>房家加 · 创意产业园</h2>
+								<div class="row mt-40">
+									<div class="col-xs-2"><p class="t-weight-b">项目概况：</p></div>
+									<div class="col-xs-10"><p> 房家加创意产业园是由杭州房家加资产管理有限公司独立运营管理 的，位于杭州未来科技城板块西溪联合科技广场4号楼1-5层的商 业办公物业。</p></div>
+								</div>
+								<div class="row">
+									<div class="col-xs-2"><p class="t-weight-b">项目规划：</p></div>
+									<div class="col-xs-10"><p>整体运营面积近10000㎡，其中1-2层为商业配套空间，3-5 层为办公服务空间。可租商业面积为100-500㎡，可租办公面积 为80-800㎡，部分区域可灵活组合自由分割。</p></div>
+								</div>
+								<div class="row">
+									<div class="col-xs-2"><p class="t-weight-b">合作范围：</p></div>
+									<div class="col-xs-10"><p>项目招商、物业租赁、项目投资 等其他合作事项。</p></div>
+								</div>
+								<div class="row">
+									<div class="col-xs-2"><p class="t-weight-b">地址：</p></div>
+									<div class="col-xs-10"><p>杭州市 · 余杭区 · 高教路970-1号4号楼。</p></div>
+								</div>
+								<div class="row">
+									<div class="col-xs-2"><p class="t-weight-b">联系电话：</p></div>
+									<div class="col-xs-10"><p><span class="mr-20">400-998-9897</span><span class="mr-20">15868715415</span></p></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container min-width-1200 mt-50 pt-50" id="lcyJssj">
+					<div class="lcy-text-title">
+						<h1><span>[</span>金沙世纪EBC<span>]</span></h1>
+						<p class="text-g-9 t-size-16">Easter · Business · Center</p>
+						<div class="lcy-dingwei-icon">
+							<img src="../images/dibiao.svg">
+						</div>
+					</div>
+					<div class="lcy-xiangmu-bg jssj-bg">
+						<div class="row">
+							<div class="col-xs-8">
+								<div class="lcy-xiangmu-text">
+									<h2>金沙世纪 · EBC</h2>
+									<div class="row mt-40">
+										<div class="col-xs-2"><p class="t-weight-b">托管模式：</p></div>
+										<div class="col-xs-10"><p>房家加作为项目资产运营管理机构为业主提供可选物业委托运营服务，客户在购买物业是可自由选择是否加入房家加委托运营服务。</p></div>
+									</div>
+									<div class="row">
+										<div class="col-xs-2"><p class="t-weight-b">委托年限：</p></div>
+										<div class="col-xs-10"><p>委托租赁期为6年。</p></div>
+									</div>
+									<div class="row">
+										<div class="col-xs-2"><p class="t-weight-b">托管价格：</p></div>
+										<div class="col-xs-10"><p>按均价前3年1.5元/㎡/天，后3年1.6元/㎡/天的租金标准向业主支付租金实际价格根据物业不同楼层与朝向价格有所不同。</p></div>
+									</div>
+									<div class="row">
+										<div class="col-xs-2"><p class="t-weight-b">地址：</p></div>
+										<div class="col-xs-10">杭州市下沙经济技术开发区金沙大道900号。<p></p></div>
+									</div>
+									<div class="row">
+										<div class="col-xs-2"><p class="t-weight-b">联系电话：</p></div>
+										<div class="col-xs-10"><p><span class="mr-20">400-998-9897</span><span class="mr-20">18969777373</span></p></div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-4">
+								<div class="lcy-map-box">
+										<div style="width: 100%;height: 465px;border: none;">
+												<div class="ditu" id="ditu2"></div>
+										</div>
+								</div>
+							</div>
+						</div>
+					</div>
+		
+		<div class="container min-width-1200 mt-50 pt-50" id="lcyQylh">
+				<div class="lcy-text-title">
+					<h1><span>[</span>企业联合计划<span>]</span></h1>
+					<p class="text-g-9 t-size-16">FJJ · Enterprise Joint Project</p>
+					<div class="lcy-dingwei-icon">
+						<img src="../images/dibiao.svg">
+					</div>
+				</div>
+				<div class="row pb-50">
+					<div class="col-xs-4">
+						<div class="lcy-qylh-img">
+							<img data-original="/Public/home/img/luchuangying/huiyi.jpg" src="../images/off-c0.jpg" alt="会议沙龙" style="display: inline;">
+						</div>
+						<div class="lcy-qylh-title">会议沙龙</div>
+					</div>
+					<div class="col-xs-4">
+						<div class="lcy-qylh-img">
+							<img data-original="/Public/home/img/luchuangying/qiatan.jpg" src="../images/off-c1.jpg" alt="商务洽谈" style="display: inline;">
+						</div>
+						<div class="lcy-qylh-title">商务洽谈</div>
+					</div>
+					<div class="col-xs-4">
+						<div class="lcy-qylh-img">
+							<img data-original="/Public/home/img/luchuangying/tuanjian.jpg" src="../images/off-c2.jpg" alt="团队建设" style="display: inline;">
+						</div>
+						<div class="lcy-qylh-title">团队建设</div>
+					</div>
+				</div>
+				<div class="hz-logo-box">
+					<div class="hz-logo-title">
+						<h3>合作伙伴</h3>
+						<div></div>
+					</div>
+					<div class="hz-logo-in">
+						<p>
+							<img src="../images/off-logo0.png" alt="户帮户">
+							<img src="../images/off-logo1.png" alt="惟锐">
+							<img src="../images/off-logo2.png" alt="律英">
+							<img src="../images/off-logo3.png" alt="网涵贸易">
+							<img src="../images/off-logo4.png" alt="彩链">
+							<img src="../images/off-logo5.png" alt="中国微盘网">
+						</p>
+					</div>
+				</div>
+				<div class="lcy-xiangmu-bg jssj-bg">
+					<div class="row">
+						<div class="col-xs-8">
+							<div class="lcy-xiangmu-text">
+								<h2>企业联合计划</h2>
+								<div class="row mt-40">
+									<div class="col-xs-2"><p class="t-weight-b">享有服务：</p></div>
+									<div class="col-xs-10">
+										<p>
+											1、免费商务洽谈，客户接待。<br>
+											2、每个月预送企业30张门店免费体验券。<br>
+											3、员工个人休闲娱乐，门票五折。<br>
+											4、公司、部门团建活动。<br>
+											5、每季度一次，免费沙龙会议等大型项目活动。<br>
+											6、合作企业logo墙店内展示，企业宣传及招聘信息发布。<br>
+										</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-2"><p class="t-weight-b">地址：</p></div>
+									<div class="col-xs-10"><p>杭州 · 萧山区 · 建设二路439号 · 青年鹿透社。</p></div>
+								</div>
+								<div class="row">
+									<div class="col-xs-2"><p class="t-weight-b">联系电话：</p></div>
+									<div class="col-xs-10"><p>400-998-9897</p></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-4">
+							<div class="lcy-map-box">
+									<div style="width: 100%;height: 465px;border: none;">
+											<div class="ditu" id="ditu3"></div>
+										</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container-fluid lcy-foot-bg">
+					<div class="lcy-form-title mt-50">
+						<h2>在线预约</h2>
+						<p>Online Booking</p>
+					</div>
+					<div class="lcy-form-text">
+						<p>请在此处留下您的联系方式以及项目需求，我们会尽快与您取得联系。</p>
+						<p>如有任何疑问，请致电 <span class="text-red">400-998-9897</span> 垂询</p>
+					</div>
+					<div class="lcy-form-body">
+						<div class="lcy-success-note">
+							<img src="../images/true.svg">
+							<h2>预约成功</h2>
+							<p>请保持您的联系方式畅通，我们会尽快与您取得联系</p>
+						</div>
+						<form class="form-horizontal" id="bookingForm" novalidate="novalidate">
+							<div class="form-group">
+								<label for="yourName" class="col-xs-2 control-label">姓名</label>
+								<div class="col-xs-10">
+									<div class="lcy-form-input-inbox">
+										<input class="form-control lcy-form-input" id="yourName" name="name" placeholder="">
+									</div>
+								</div>
+							</div>
+							<div class="form-group mt-20">
+								<label for="yourSex" class="col-xs-2 control-label">您的性别</label>
+								<div class="col-xs-10">
+									<div class="lcy-form-input-inbox pl-20">
+										<input type="radio" name="sex" value="1" id="man">
+										<label for="man" class="radio-label">先生</label>
+										<input type="radio" name="sex" value="2" id="woman"> 
+										<label for="woman" class="radio-label">女士</label>
+									</div>
+								</div>
+							</div>
+							<div class="form-group mt-20">
+								<label for="yourNumber" class="col-xs-2 control-label">联系电话</label>
+								<div class="col-xs-10">
+									<div class="lcy-form-input-inbox">
+										<input class="form-control lcy-form-input" id="yourNumber" name="number" placeholder="">
+									</div>
+								</div>
+							</div>
+							<div class="form-group mt-20">
+								<label for="datepicker" class="col-xs-2 control-label">预约时间</label>
+								<div class="col-xs-10">
+									<div class="lcy-form-input-inbox">
+										<input type="text" class="form-control lcy-form-input" name="date" placeholder="点击选择看房日期" id="datepicker">
+									</div>
+								</div>
+							</div>
+							<div class="form-group mt-20">
+								<label for="yourRemark" class="col-xs-2 control-label">说明</label>
+								<div class="col-xs-10">
+									<div class="lcy-form-input-inbox">
+										<textarea class="form-control lcy-form-input lcy-form-textarea" rows="4" name="remark" placeholder="请在此处描述您期望得到的服务"></textarea>
+									</div>
+								</div>
+							</div>
+							<div class="form-group mt-20 mb-30">
+								<div class="col-xs-offset-2 col-xs-3">
+									<input type="submit" class="btn lcy-form-btn" value="提交预约申请">
+								</div>
+							</div>
+						</form>
+					</div>
+					<hr style="border-color: #666666;">
+					<div class="container">
+						<div class="row text-center pt-10 pb-10">
+							<div class="col-xs-12">
+								<p style="color: #939393;">Copyright  ©  2015 房家加 版权所有    浙ICP备15019900号－1</p>
+								<div style="width:300px;margin:0 auto;">
+										 <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010602005783" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+											 <img src="../images/polic.png" style="float:left;">
+											 <p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color: #939393;">浙公网安备 33010602005783号</p>
+										 </a>
+									 </div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+	<script>
+		$(function(){
+			function scrollGo(btn,obj) {
+				var oGoTo = obj;
+				btn.click(function(obj){
+					$("html,body").animate({scrollTop: oGoTo.offset().top}, 500);
+				});
+			}
+			//绑定事件
+			$(document).ready(function() {
+				$("#lcyAboutBtn").click(function(){
+					$("html,body").animate({scrollTop: 600}, 500);
+				});
+				
+				scrollGo($("#lcyCyyBtn"),$("#lcyCyy"));
+				scrollGo($("#lcyJssjBtn"),$("#lcyJssj"));
+				scrollGo($("#lcyQylhBtn"),$("#lcyQylh"));
+				
+				scrollGo($("#lcyBookingBtn"),$(".lcy-foot-bg"));
+			});
+
+			
+			window.onscroll =()=> {
+				
+				console.log(  );
+				if ($(document).scrollTop() > $(window).height()-100) {
+					$('.nav-box').addClass('top-fix');
+				}else{
+					$('.nav-box').removeClass('top-fix');
+				}
+			}
+			/*导航栏项目样式监听*/
+			$(document).scroll(function(){
+				//获取滚动条高度
+				var oScrollTop = $(document).scrollTop();
+				//获取项目位置
+				var oQylhHeight = $("#lcyQylh").offset().top;
+				var oJssjHeight = $("#lcyJssj").offset().top;
+				var oCyyHeight = $("#lcyCyy").offset().top;
+				//获取页脚位置
+				var oFootHeight = $(".lcy-foot-bg").offset().top;
+				//获取按钮元素
+				var oAboutBtn = $("#lcyAboutBtn");
+				var oQylhBtn = $("#lcyQylhBtn");
+				var oJssjBtn = $("#lcyJssjBtn");
+				var oCyyBtn = $("#lcyCyyBtn");
+				//按样式名获取所有按钮
+				var oAllBtn = $('.lcy-nav a[class="pull-right"]');
+				if (oScrollTop>=600&&oScrollTop<oCyyHeight) {
+					//首先还原样式
+					oAllBtn.css("color","#ffffff");
+					//设置当前按钮样式
+					oAboutBtn.css("color","#96cb00");
+				} else if (oScrollTop>=oCyyHeight&&oScrollTop<oJssjHeight) {
+					//首先还原样式
+					oAllBtn.css("color","#ffffff");
+					//设置当前按钮样式
+					oCyyBtn.css("color","#96cb00");
+				} else if(oScrollTop>=oJssjHeight&&oScrollTop<oQylhHeight) {
+					//首先还原样式
+					oAllBtn.css("color","#ffffff");
+					//设置当前按钮样式
+					oJssjBtn.css("color","#96cb00");
+				} else if (oScrollTop>=oQylhHeight&&oScrollTop<oFootHeight) {
+					//首先还原样式
+					oAllBtn.css("color","#ffffff");
+					//设置当前按钮样式
+					oQylhBtn.css("color","#96cb00");
+				} else if (oScrollTop<oCyyHeight||oScrollTop>oFootHeight) {
+					//首先还原样式
+					oAllBtn.css("color","#ffffff");
+				}
+			});
+		/*表单验证及提交*/
+		$().ready(function () {
+		        $("#bookingForm").validate({
+		            errorPlacement: function (error, element) {
+		                $(element).parent().parent().append(error);
+		            },
+		            errorElement: "span",
+		            rules: {
+		            	project:"required",
+		                name: "required",
+		                sex: "required",
+		                number: {
+		                    required: true,
+		                    digits: true,
+		                },
+		                date: "required",
+		                remark:"required",
+		            },
+		            messages: {
+		            	project:"请选择您要预约的项目",
+		                name: "请填写您的姓名",
+		                sex: "请选择您的性别",
+		                number: {
+		                    required: "请填写您的电话号码",
+		                    digits: "请输入正确的电话号码格式",
+		                },
+		                date: "请选择看房日期",
+		                remark:"请填写相关说明",
+		            },
+		            submitHandler:function(form){
+		                $('button[type="submit"]').attr('disabled','disabled');
+		                var index = layer.load(3, {time: 5000, shade: [0.8	,"#ffffff"],scrollbar: false});
+		                $(form).ajaxSubmit(function (data) {
+		                	layer.close(index);
+	                        if (!data.error) {
+	                        	$(".lcy-form-title").hide();
+	                        	$(".lcy-form-text").hide();
+	                        	$("#bookingForm").remove();
+	                        	$(".lcy-success-note").show();
+	                        } else {
+	                            layer.msg("提交失败请稍后重试");
+	                        }
+		                });
+		            }
+		        });
+		    });
+		    
+		/*日期选择*/
+    	
+			var i18n = { // 本地化 
+                      previousMonth:'上个月',
+                      nextMonth: '下个月',
+                      months: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'],
+                      weekdays: ['周日', '周一', '周二', '周三', '周四', '周五', '周六'],
+                      weekdaysShort: ['日', '一', '二', '三', '四', '五', '六']
+                 }
+			var picker = new Pikaday({
+				showMonthAfterYear:true,//头部年份在前		
+				i18n: i18n,
+				// isRTL:true,//倒转周
+				yearSuffix:"&nbsp;年",
+				field: document.getElementById('datepicker'),
+				format: 'YYYY/M/D',
+				toString(date, format) {
+
+					const day = date.getDate();
+					const month = date.getMonth() + 1;
+					const year = date.getFullYear();
+					return `${year}-${month}-${day}`;
+				},
+				parse(dateString, format) {
+
+					const parts = dateString.split('/');
+					const day = parseInt(parts[0], 10);
+					const month = parseInt(parts[1] - 1, 10);
+					const year = parseInt(parts[1], 10);
+					return new Date(year, month, day);
+				}
+			});
+//地图
+		function mapLoad(id,city,...deg){
+	// 百度地图API功能
+
+	var map = new BMap.Map(id);
+	// map.centerAndZoom(30.275770,120.023280,15);  // 初始化地图,设置中心点坐标和地图级别	
+	map.setCurrentCity(city);   // 设置地图显示的城市 此项是必须设置的
+	map.enableScrollWheelZoom(true);     //启用滚轮放大缩小，默认禁用
+	var point = new BMap.Point(deg[0],deg[1]);
+	map.centerAndZoom(point, 18);
+		var marker = new BMap.Marker(point);  // 创建标注
+	map.addOverlay(marker);               // 将标注添加到地图中
+	marker.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
+	
+
+	
+	
+}
+
+mapLoad("ditu1","杭州市",120.028973,30.282027);
+mapLoad("ditu2","杭州市",120.318749,30.315916);
+mapLoad("ditu3","杭州市",120.254855,30.206259);
+		})
+	</script>
+</body>
+</html>
